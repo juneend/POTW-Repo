@@ -81,7 +81,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.cinemachine": {
-      "version": "3.1.4",
+      "version": "3.1.7",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -125,7 +125,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.inputsystem": {
-      "version": "1.14.0",
+      "version": "1.14.2",
       "depth": 0,
       "source": "registry",
       "dependencies": {
