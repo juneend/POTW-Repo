@@ -7607,6 +7607,7 @@ GameObject:
   - component: {fileID: 525298963}
   - component: {fileID: 525298962}
   - component: {fileID: 525298966}
+  - component: {fileID: 525298967}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Player
@@ -7630,8 +7631,11 @@ MonoBehaviour:
   typeOfControl: 0
   speed: 0.2
   movementType: 0
-  orientToDirection: 0
+  orientToDirection: 1
   lookAxis: 0
+  DebugMode: 1
+  movement: {x: 0, y: 0, z: 0}
+  cachedDirection: {x: 0, y: 0, z: 0}
   animator: {fileID: 0}
 --- !u!50 &525298963
 Rigidbody2D:
@@ -7646,7 +7650,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 10
-  m_LinearDamping: 0
+  m_LinearDamping: 17
   m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -7767,6 +7771,22 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 2}
   m_Direction: 0
+--- !u!114 &525298967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525298960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e7573cb23341894486ebbd71453d52b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidbody2D: {fileID: 0}
+  key: 32
+  jumpStrength: 75
+  MaxFlaps: 10
 --- !u!1 &735844276
 GameObject:
   m_ObjectHideFlags: 0

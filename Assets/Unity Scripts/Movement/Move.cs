@@ -18,7 +18,12 @@ public class Move : Physics2DObject
 	// The direction that will face the player
 	public Enums.Directions lookAxis = Enums.Directions.Up;
 
-	private Vector3 movement, cachedDirection;
+	[Header("Debug Mode")]
+	[Tooltip("Enable to view movement vectors")]
+	public bool DebugMode = false;
+
+	[HideInInspector]
+	public Vector3 movement, cachedDirection;
 	private float moveHorizontal;
 	private float moveVertical;
 
@@ -33,6 +38,7 @@ public class Move : Physics2DObject
     // Update gets called every frame
     void Update ()
 	{
+
         //#if UNITY_STANDALONE || !UNITY_EDITOR
         // Moving with the arrow keys
         if(typeOfControl == Enums.KeyGroups.ArrowKeys)
@@ -71,6 +77,12 @@ public class Move : Physics2DObject
 				cachedDirection = movement;
 			}
 			Utils.SetAxisTowards(lookAxis, transform, cachedDirection);
+			
+		}
+
+		if(DebugMode)
+		{
+			Debug.DrawRay(transform.position, movement, Color.blue);
 		}
 	}
 
