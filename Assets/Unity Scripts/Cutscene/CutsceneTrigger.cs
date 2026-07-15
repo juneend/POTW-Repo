@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class CutsceneTrigger : MonoBehaviour
@@ -7,7 +8,7 @@ public class CutsceneTrigger : MonoBehaviour
     public bool ActivateOnCollide = true;
 
     //a list (array) of this cutscene's dialog lines
-    public CutsceneLine[] Lines;
+    public List<CutsceneLine> Lines;
 
     //when the player comes within range of the actor
     public static event System.Action ActorSelect;
@@ -18,14 +19,18 @@ public class CutsceneTrigger : MonoBehaviour
     //when the player presses the interact key while in range of the actor
     public static event System.Action ActorInteract;
 
-    //is this cutscene currently playing?
+    //is the player in range of this trigger?
     [HideInInspector]
     public bool isActive = false;
+
+    private CutsceneManager cutsceneMgr;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        GameObject UI = GameObject.Find("UserInterface");
+        if (UI == null) Debug.LogError("Cutscene trigger could not find user interface in this scene, please add one from Assets>UserInterfaces!");
+        cutsceneMgr = UI.GetComponent<CutsceneManager>();
     }
 
     // Update is called once per frame
@@ -38,6 +43,12 @@ public class CutsceneTrigger : MonoBehaviour
             ActorInteract?.Invoke();
         }
     }
+
+    /// <summary>
+    /// Sent when another object enters a trigger collider attached to this
+    /// object (2D physics only).
+    /// </summary>
+    /// <param name="other">The other Collider2D involved in this collision.</param>
     void OnTriggerEnter2D(Collider2D other)
     {
         //if the player enters the cutscene and it is NOT active
@@ -46,6 +57,20 @@ public class CutsceneTrigger : MonoBehaviour
             print("collision!");
             //call the select event 
             ActorSelect?.Invoke();
+            isActive = true;
         }
+    }
+
+    /// <summary>
+    /// Sent when another object leaves a trigger collider attached to
+    /// this object (2D physics only).
+    /// </summary>
+    /// <param name="other">The other Collider2D involved in this collision.</param>
+    void OnTriggerExit2D(Collider2D other)
+    {
+        //cutscenes should only activate once, for now
+        //isActive = false;
+
+        ActorDeselect?.Invoke();
     }
 }
