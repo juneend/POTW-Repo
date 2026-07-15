@@ -35,6 +35,9 @@ public class MoveInspector : InspectorBase
 			EditorGUILayout.HelpBox(constraintsReminder, MessageType.Info);
 		}
 
+		//GUILayout.Label("Debug", EditorStyles.boldLabel);
+		EditorGUILayout.PropertyField(serializedObject.FindProperty("DebugMode"));
+
 		serializedObject.ApplyModifiedProperties();
 	}
 }
