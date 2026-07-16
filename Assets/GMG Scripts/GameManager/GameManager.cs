@@ -65,14 +65,12 @@ public class GameManager : MonoBehaviour {
 	{
 		isPaused = true; 
 		Time.timeScale = 0; 
-		ChangePlayerState(PlayerState.Pause);
 		if (onPause != null) onPause(true);
 	}
     public void UnpauseGame() 	
 	{
 		isPaused = false; 
 		Time.timeScale = 1; 
-		ChangePlayerState(PlayerState.Play);
 		if (onPause != null) onPause(false);
 	}
 
@@ -116,9 +114,15 @@ public class GameManager : MonoBehaviour {
 		if (Input.GetKeyUp(KeyCode.Escape))
 		{
 			if (currState == PlayerState.Play)
+			{
 				PauseGame();
+				ChangePlayerState(PlayerState.Pause);
+			}
 			else if (currState == PlayerState.Pause)
+			{
 				UnpauseGame();
+				ChangePlayerState(PlayerState.Play);
+			}
 			
 		}	
 	}
