@@ -67,35 +67,24 @@ public class GameManager : MonoBehaviour {
 	public event PauseHandler onPause;
 	public void PauseGame()
 	{
-<<<<<<< Updated upstream
-		isPaused = true; 
-		Time.timeScale = 0; 
-		if (onPause != null) onPause(true);
-	}
-    public void UnpauseGame() 	
-	{
-		isPaused = false; 
-		Time.timeScale = 1; 
-		if (onPause != null) onPause(false);
-	}
-=======
-		isPaused = true;
-		paused = true;
-        Time.timeScale = 0f;
-        ChangePlayerState(PlayerState.Pause);
-		onPause?.Invoke(true);
->>>>>>> Stashed changes
 
-		
-	}
-	public void UnpauseGame()
+		isPaused = true;
+        paused = true;
+        Time.timeScale = 0; 
+		if (onPause != null) onPause(true);
+        ChangePlayerState(PlayerState.Pause);
+        onPause?.Invoke(true);
+    }
+    public void UnpauseGame() 	
 	{
 		isPaused = false;
 		paused = false;
-		Time.timeScale = 1;
-		ChangePlayerState(PlayerState.Play);
-		onPause?.Invoke(false);
-	}
+		Time.timeScale = 1; 
+		if (onPause != null) onPause(false);
+        ChangePlayerState(PlayerState.Play);
+        onPause?.Invoke(false);
+    }
+
 
 	//Getters
 	InputManager inputMgr;
@@ -138,28 +127,16 @@ public class GameManager : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.Escape))
 		{
 			if (currState == PlayerState.Play)
-<<<<<<< Updated upstream
 			{
 				PauseGame();
 				ChangePlayerState(PlayerState.Pause);
 			}
-=======
-
-				PauseGame();
-
->>>>>>> Stashed changes
 			else if (currState == PlayerState.Pause)
 			{
 				UnpauseGame();
-<<<<<<< Updated upstream
 				ChangePlayerState(PlayerState.Play);
 			}
-			
-		}	
-=======
 		}
-		
->>>>>>> Stashed changes
 	}
 
 	public void ChangePlayerState(PlayerState newState)
