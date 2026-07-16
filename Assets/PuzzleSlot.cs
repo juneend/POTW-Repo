@@ -1,16 +1,17 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 public class PuzzleSlot : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField] private AudioSource _source;
+    [SerializeField] private AudioClip _completeClip;
 
-    // Update is called once per frame
-    void Update()
+
+    public void Placed()
     {
-        
+        _source.PlayOneShot(_completeClip);
     }
 }
+
+
