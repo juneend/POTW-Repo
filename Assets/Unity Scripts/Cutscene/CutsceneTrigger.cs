@@ -76,5 +76,7 @@ public class CutsceneTrigger : MonoBehaviour
         //isActive = false;
 
         ActorDeselect?.Invoke();
+        
+        Destroy(this);
     }
 }
