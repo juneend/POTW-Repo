@@ -11,5 +11,20 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Example Level 2.unity
     guid: 0aa584be67dc64544b3bd2e19bbc2a76
+  - enabled: 1
+    path: Assets/Scenes/City_lvl1.unity
+    guid: 2b796a52d5c955d49a81e483c39f7b7a
+  - enabled: 1
+    path: Assets/Scenes/City_lvl2.unity
+    guid: 2a0ef131dfadbbd41959a9286867ac2d
+  - enabled: 1
+    path: Assets/Scenes/market_lvl.unity
+    guid: 8de70eb500097b840990b72df7285b0f
+  - enabled: 1
+    path: Assets/Scenes/Aiza's Scene.unity
+    guid: b6fe2c2fa904df44eb720ce789386f98
+  - enabled: 1
+    path: Assets/Scenes/Offic_lvl.unity
+    guid: f0b6f1226b589da49a331d9ce6ce5ec6
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 3590b91b4603b465dbb4216d601bff33, type: 3}
