@@ -17,6 +17,21 @@ public class GameManager : MonoBehaviour {
 	private static GameManager gameMgr;
     public GameSettings Settings{ get; private set; }
 
+	public enum PlayerState
+    {
+        Pause,
+        Play,
+        Cutscene,
+        NUM_STATES
+    }
+
+    //current game state
+	[HideInInspector]
+    public PlayerState currState = PlayerState.Play;
+	//an event that is called whenever the game state changes
+	public static event System.Action<PlayerState> PlayerStateChanged;
+
+
 	public static GameManager Inst()
 	{
 		if (gameMgr != null) return gameMgr;
@@ -46,8 +61,20 @@ public class GameManager : MonoBehaviour {
     public bool isPaused = false;
     public delegate void PauseHandler(bool pause);
     public event PauseHandler onPause;
-    public void PauseGame() 		{isPaused = true; Time.timeScale = 0; if (onPause != null) onPause(true);}
-    public void UnpauseGame() 	{isPaused = false; Time.timeScale = 1; if (onPause != null) onPause(false);}
+    public void PauseGame() 		
+	{
+		isPaused = true; 
+		Time.timeScale = 0; 
+		ChangePlayerState(PlayerState.Pause);
+		if (onPause != null) onPause(true);
+	}
+    public void UnpauseGame() 	
+	{
+		isPaused = false; 
+		Time.timeScale = 1; 
+		ChangePlayerState(PlayerState.Play);
+		if (onPause != null) onPause(false);
+	}
 
     //Getters
     	InputManager inputMgr;
@@ -84,7 +111,22 @@ public class GameManager : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
+	void Update () 
+	{
+		if (Input.GetKeyUp(KeyCode.Escape))
+		{
+			if (currState == PlayerState.Play)
+				PauseGame();
+			else if (currState == PlayerState.Pause)
+				UnpauseGame();
+			
+		}	
 	}
+
+	public void ChangePlayerState(PlayerState newState)
+    {
+        currState = newState;
+        print("game state changed to " + currState);
+        PlayerStateChanged?.Invoke(newState);
+    }
 }
