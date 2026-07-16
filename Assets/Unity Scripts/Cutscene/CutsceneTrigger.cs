@@ -5,11 +5,13 @@ public class CutsceneTrigger : MonoBehaviour
 {
     //TODO: implement interact functionality
     //should this cutscene activate on collision, or on interact?
-    public bool ActivateOnCollide = true;
+    //public bool ActivateOnCollide = true;
 
     //a list (array) of this cutscene's dialog lines
     public List<CutsceneLine> Lines;
 
+    //TODO: if dialogue changes so that there is a prompt to start cutscene, these events should probably
+    //pass a bool stating such
     //when the player comes within range of the actor
     public static event System.Action ActorSelect;
 
@@ -55,7 +57,9 @@ public class CutsceneTrigger : MonoBehaviour
         if (other.gameObject.CompareTag("Player") && isActive == false)
         {
             print("collision!");
-            //call the select event 
+            //give this cutscene's lines to the manager
+            cutsceneMgr.DeliverLines(Lines);
+            //call the select event
             ActorSelect?.Invoke();
             isActive = true;
         }

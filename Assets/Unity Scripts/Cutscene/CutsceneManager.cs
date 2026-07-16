@@ -10,6 +10,7 @@ public class CutsceneManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        CutsceneTrigger.ActorSelect += CreateSpeech;
         CutsceneTrigger.ActorInteract += Interact;
         CutsceneTrigger.ActorDeselect += DestroySpeech;
     }
@@ -20,7 +21,7 @@ public class CutsceneManager : MonoBehaviour
         
     }
 
-    void DeliverLines(List<CutsceneLine> lines)
+    public void DeliverLines(List<CutsceneLine> lines)
     {
         currLines.Clear();
 
@@ -38,5 +39,10 @@ public class CutsceneManager : MonoBehaviour
     public void DestroySpeech()
     {
         
+    }
+
+    public void CreateSpeech()
+    {
+        print("cutscene start!");
     }
 }
