@@ -116,9 +116,21 @@ public class GameManager : MonoBehaviour {
 	}*/
 
 	// Use this for initialization
-	void Start() {
+	void Start()
+	{
 		UnpauseGame();
 
+		//automatically hide the gameover scrren at the very start of the game
+		if (goMenu != null)
+		{
+
+			goMenu.SetActive(false);
+		}
+		else
+		{
+			Debug.LogWarning("GameManager: goMenu is not assigned in the Inspector!", this);
+
+		}
 	}
 
 	// Update is called once per frame
@@ -152,7 +164,10 @@ public class GameManager : MonoBehaviour {
 
 	public void Alerted() {
 		PauseGame();
-		goMenu.SetActive(true);
+		//safely show the game over screen when the player is caught
+		if (goMenu != null) {
+			goMenu.SetActive(true);
+		}
 
 	}
 }
