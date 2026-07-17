@@ -109,8 +109,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   _renderer: {fileID: 7865626147248922815}
   _source: {fileID: 314098751182093290}
-  _pickUpClip: {fileID: 8300000, guid: 8cda4f31d562b464baa0c27968e2b100, type: 3}
-  _dropClip: {fileID: 8300000, guid: 8cda4f31d562b464baa0c27968e2b100, type: 3}
+  _pickUpClip: {fileID: 8300000, guid: cff3ded347906ea4ea0653458450e031, type: 3}
+  _dropClip: {fileID: 8300000, guid: fa8505378d99bd243bfb2694612e3782, type: 3}
 --- !u!61 &5020756697474830735
 BoxCollider2D:
   m_ObjectHideFlags: 0
