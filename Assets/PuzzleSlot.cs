@@ -2,17 +2,15 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-
 public class PuzzleSlot : MonoBehaviour
 {
-    public SpriteRenderer _renderer;
-
     [SerializeField] private AudioSource _source;
+    [SerializeField] private AudioClip _completeClip;
 
 
     public void Placed()
     {
-        _source.Play();
+        _source.PlayOneShot(_completeClip);
     }
 }
 
