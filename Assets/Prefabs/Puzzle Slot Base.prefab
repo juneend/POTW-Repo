@@ -84,7 +84,7 @@ SpriteRenderer:
   m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 5931842347579807508, guid: 007cfbfb4b1b9654f8f120ba0439feef, type: 3}
-  m_Color: {r: 0.2688679, g: 0.2688679, b: 0.2688679, a: 1}
+  m_Color: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -108,7 +108,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   _renderer: {fileID: 7118952166408555435}
   _source: {fileID: 2993720648962312536}
-  _completeClip: {fileID: 0}
 --- !u!82 &2993720648962312536
 AudioSource:
   m_ObjectHideFlags: 0
