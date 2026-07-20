@@ -15893,7 +15893,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
       propertyPath: Lines.Array.size
-      value: 15
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
       propertyPath: Lines.Array.data[0].speaker
@@ -15957,6 +15957,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
       propertyPath: Lines.Array.data[14].speaker
+      value: Mom
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[15].speaker
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[16].speaker
       value: Girl
       objectReference: {fileID: 0}
     - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
@@ -16020,8 +16028,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
       propertyPath: Lines.Array.data[14].dialogue
-      value: " \u201CBut people are dying from the heat strikes! We have to do something.
-        Do you still have the plans?\u201D "
+      value: "\u201CYes, right here. I know an old friend, Alex, who works a drafting
+        desk inside the city limits. But the corporate sector is heavily guarded.
+        Too many cameras for an old woman with bad lungs.\u201D\r\n "
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[15].dialogue
+      value: "\u201CThen I\u2019ll go. I\u2019ll bring Alex the plans.\u201D "
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[16].dialogue
+      value: "\u201CThen I\u2019ll go. I\u2019ll bring Alex the plans.\u201D "
       objectReference: {fileID: 0}
     - target: {fileID: 6384596258644641706, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
       propertyPath: m_Name
