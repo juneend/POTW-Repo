@@ -15,6 +15,10 @@ public class FOVSensor : MonoBehaviour
     [SerializeField] GameManager gM;
     private LineRenderer lineRenderer;
 
+    //cache the stelath script on the player
+    private PlayerStealth playerStealth;
+
+
     private void Awake()
     {
         lineRenderer = GetComponent<LineRenderer>();
@@ -32,17 +36,25 @@ public class FOVSensor : MonoBehaviour
             if (player != null) target = player.transform;
         }
 
+        //search for the playerstealth compnent on the target or its parent
+        if (target != null) { 
+            playerStealth = target.GetComponent<PlayerStealth>();
+            if (playerStealth != null) {
+                playerStealth = target.GetComponent<PlayerStealth>();
+            }
+        }
         if (transform.childCount > 0)
             rayPoint = transform.GetChild(0);
         else
             rayPoint = transform;
 
         gM = GameManager.Inst();
+
     }
 
     private void Start()
     {
-        // Force the line renderer to use 3 points for our triangle
+        // Force the line renderer to use 3 points for the triangle
         lineRenderer.positionCount = 3;
         DrawFOVVisual();
     }
@@ -51,11 +63,20 @@ public class FOVSensor : MonoBehaviour
     {
         if (target == null || rayPoint == null) return;
 
+        DrawFOVVisual();
+
+        //stealth check, if the player exists and is hidden, hide the alert icon and skip detection
+        if (playerStealth != null && playerStealth.isHidden)
+        {
+            if (alertIcon != null) alertIcon.SetActive(false);
+            return;
+        }
+
         Vector2 targetDir = target.position - rayPoint.position;
         float distanceToTarget = targetDir.magnitude;
         Vector2 targetDirNormalized = targetDir.normalized;
 
-        float angleOfDir = Vector2.Angle(targetDirNormalized, lookDir);
+        float angleOfDir = Vector2.Angle(targetDirNormalized, transform.up);
 
         // Always redraw the visual cone in case you change settings in real-time
         DrawFOVVisual();
@@ -81,6 +102,8 @@ public class FOVSensor : MonoBehaviour
         {
             if (alertIcon != null) alertIcon.SetActive(false);
         }
+
+        
     }
 
     // This function calculates the triangle vertices and updates the Line Renderer
@@ -92,7 +115,7 @@ public class FOVSensor : MonoBehaviour
         Vector3 origin = Vector3.zero;
 
         // 2. Calculate local direction angles
-        float baseAngle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg;
+        float baseAngle = Mathf.Atan2(transform.up.y, transform.up.x) * Mathf.Rad2Deg;
         float halfFov = fovAngle / 2f;
 
         // Calculate left boundary of the cone
