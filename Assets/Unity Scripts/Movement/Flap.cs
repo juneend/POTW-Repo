@@ -14,12 +14,14 @@ public class Flap : Physics2DObject
     public int MaxFlaps = 2;
     private int FlapsRemaining;
 
-    private Move Moveref;
+    Move Moveref;
+    Animator animator;
 
     void Start()
     {
         FlapsRemaining = MaxFlaps;
         Moveref = transform.GetComponent<Move>();
+        animator = GetComponent<Animator>();
 
     }
 
@@ -37,6 +39,9 @@ public class Flap : Physics2DObject
 				// Apply a force in the direction the player is moving
                 rigidbody2D.AddForce(Moveref.movement * jumpStrength, ForceMode2D.Impulse);
                 FlapsRemaining -= 1;
+
+                animator.SetTrigger("Flap");
+
                 print("flaps remaining: " + FlapsRemaining);
 			}
 
