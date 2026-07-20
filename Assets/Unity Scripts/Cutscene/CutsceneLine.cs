@@ -1,3 +1,5 @@
+//  Author: June Endstrasser
+
 using UnityEngine;
 
 
@@ -10,6 +12,8 @@ public class CutsceneLine
     
     [TextArea(2, 5)]
     public string dialogue;
+
+    public Sprite portrait;
 
 
 }

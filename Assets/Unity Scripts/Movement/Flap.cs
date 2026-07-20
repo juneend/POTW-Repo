@@ -1,3 +1,5 @@
+//  Author: June Endstrasser
+
 using UnityEngine;
 using System.Collections;
 

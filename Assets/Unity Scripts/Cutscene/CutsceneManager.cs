@@ -1,7 +1,11 @@
+//  Author: June Endstrasser
+
 using System;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CutsceneManager : MonoBehaviour
 {
@@ -14,6 +18,7 @@ public class CutsceneManager : MonoBehaviour
     public GameObject speechPanel;
     public TextMeshProUGUI dialogueText;
     public TextMeshProUGUI speakerText;
+    public Image portraitImg;
 
     GameManager gameMgr;
     
@@ -54,6 +59,16 @@ public class CutsceneManager : MonoBehaviour
         lineIndex += 1;
         dialogueText.text = currLines[lineIndex].dialogue;
         speakerText.text = currLines[lineIndex].speaker;
+        if (currLines[lineIndex].portrait != null)
+        {
+            portraitImg.color = Color.white;
+            portraitImg.sprite = currLines[lineIndex].portrait;
+        }
+        else
+        {
+            print("no portrait");
+            portraitImg.color = Color.clear;
+        }
 
         //if the next line does not exist, the next interact should destroy the speechbox
         if (lineIndex == currLines.Count - 1)
@@ -82,10 +97,24 @@ public class CutsceneManager : MonoBehaviour
 
         speechPanel.SetActive(true);
 
-        //TODO: add speaker image as well
+        //TODONE: add speaker image as well
         lineIndex = 0;
         dialogueText.text = currLines[lineIndex].dialogue;
         speakerText.text = currLines[lineIndex].speaker;
+        portraitImg.sprite = currLines[lineIndex].portrait;
+
+        if (currLines[lineIndex].portrait != null)
+        {
+            portraitImg.color = Color.white;
+            portraitImg.sprite = currLines[lineIndex].portrait;
+        }
+        else
+        {
+            print("no portrait");
+            portraitImg.color = Color.clear;
+        }
+
+        
         
     }
 }
