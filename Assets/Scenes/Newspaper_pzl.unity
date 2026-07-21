@@ -132,6 +132,8 @@ GameObject:
   - component: {fileID: 269590829}
   - component: {fileID: 269590828}
   - component: {fileID: 269590827}
+  - component: {fileID: 269590832}
+  - component: {fileID: 269590831}
   m_Layer: 5
   m_Name: button
   m_TagString: Untagged
@@ -171,7 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe2d01f36b24b4a098b250d65a68a92f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LoadLevelAction
-  levelName: market_lvl
+  levelName: 0
 --- !u!114 &269590828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,8 +218,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 269590827}
-        m_TargetAssemblyTypeName: LoadLevelAction, Assembly-CSharp
+      - m_Target: {fileID: 269590832}
+        m_TargetAssemblyTypeName: ConditionArea, Assembly-CSharp
         m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
@@ -266,6 +268,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 269590825}
   m_CullTransparentMesh: 1
+--- !u!61 &269590831
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269590825}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &269590832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269590825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 810546aa5348745779a5772744036fd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ConditionArea
+  actions:
+  - {fileID: 269590827}
+  useCustomActions: 0
+  customActions:
+    m_PersistentCalls:
+      m_Calls: []
+  happenOnlyOnce: 1
+  filterByTag: 0
+  filterTag: Player
+  frequency: 1
+  eventType: 0
 --- !u!1 &388032036
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,6 +525,7 @@ MonoBehaviour:
   _piecePrefab: {fileID: 36186177147031974, guid: 39b7b8c49c4c6c0478a1a3240ef0345a, type: 3}
   _slotParent: {fileID: 497470490}
   _pieceParent: {fileID: 2026502860}
+  continueButton: {fileID: 269590825}
 --- !u!1 &497470489
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,29 +5,48 @@ using System.Linq;
 
 public class PuzzleManager : MonoBehaviour
 {
-
     [SerializeField] private List<PuzzleSlot> _slotPrefabs;
     [SerializeField] private PuzzlePiece _piecePrefab;
     [SerializeField] private Transform _slotParent, _pieceParent;
 
+    [SerializeField] private GameObject continueButton;
+
+    private int piecesPlaced = 0;
+
     void Start()
     {
+        continueButton.SetActive(false);
         Spawn();
     }
+
     void Spawn()
     {
-        var randomSet = _slotPrefabs.OrderBy(s=> Random.value).Take(3).ToList();
+        var randomSet = _slotPrefabs.OrderBy(s => Random.value).Take(3).ToList();
 
         for (int i = 0; i < randomSet.Count; i++)
         {
-            var SpawnedSlot = Instantiate(randomSet[i], _slotParent.GetChild(i).position, Quaternion.identity);
+            var spawnedSlot = Instantiate(
+                randomSet[i],
+                _slotParent.GetChild(i).position,
+                Quaternion.identity);
 
-            var spawnedPiece = Instantiate(_piecePrefab, _pieceParent.GetChild(i).position, Quaternion.identity);
-            spawnedPiece.Init(SpawnedSlot);
+            var spawnedPiece = Instantiate(
+                _piecePrefab,
+                _pieceParent.GetChild(i).position,
+                Quaternion.identity);
+
+            spawnedPiece.Init(spawnedSlot);
         }
     }
 
+    public void PiecePlaced()
+    {
+        piecesPlaced++;
 
-
-
+        if (piecesPlaced >= 3)
+        {
+            continueButton.SetActive(true);
+        }
+    }
 }
+
