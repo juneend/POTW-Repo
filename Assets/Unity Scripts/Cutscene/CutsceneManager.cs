@@ -1,5 +1,6 @@
 //  Author: June Endstrasser
 
+using NUnit.Framework.Constraints;
 using System;
 using System.Collections.Generic;
 using TMPro;
@@ -10,7 +11,7 @@ using UnityEngine.UI;
 public class CutsceneManager : MonoBehaviour
 {
     [HideInInspector]
-    public List<CutsceneLine> currLines;
+    public List<CutsceneLine> currLines = new List<CutsceneLine>();
 
     int lineIndex;
 
@@ -56,26 +57,16 @@ public class CutsceneManager : MonoBehaviour
 
     public void Interact()
     {
-        lineIndex += 1;
-        dialogueText.text = currLines[lineIndex].dialogue;
-        speakerText.text = currLines[lineIndex].speaker;
-        if (currLines[lineIndex].portrait != null)
+        lineIndex++;
+
+        // If we reached past the last line, end the cutscene
+        if (lineIndex >= currLines.Count)
         {
-            portraitImg.color = Color.white;
-            portraitImg.sprite = currLines[lineIndex].portrait;
-        }
-        else
-        {
-            print("no portrait");
-            portraitImg.color = Color.clear;
+            DestroySpeech();
+            return;
         }
 
-        //if the next line does not exist, the next interact should destroy the speechbox
-        if (lineIndex == currLines.Count - 1)
-        {
-            CutsceneTrigger.ActorInteract -= Interact;
-            CutsceneTrigger.ActorInteract += DestroySpeech;
-        }
+        DisplayCurrentLine();
     }
 
     public void DestroySpeech()
@@ -116,5 +107,18 @@ public class CutsceneManager : MonoBehaviour
 
         
         
+    }
+    private void DisplayCurrentLine() {
+        dialogueText.text = currLines[lineIndex].dialogue;
+        speakerText.text =  currLines[lineIndex].speaker;
+
+        if (currLines[lineIndex].portrait != null)
+        {
+            portraitImg.color = Color.white;
+            portraitImg.sprite = currLines[lineIndex].portrait;
+        }
+        else { 
+            portraitImg.color= Color.clear;
+        }
     }
 }
