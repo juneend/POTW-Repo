@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.76, y: 2.88, z: 0}
-  m_LocalScale: {x: 7.225684, y: 4.65543, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -111,6 +111,8 @@ MonoBehaviour:
   _source: {fileID: 314098751182093290}
   _pickUpClip: {fileID: 8300000, guid: cff3ded347906ea4ea0653458450e031, type: 3}
   _dropClip: {fileID: 8300000, guid: fa8505378d99bd243bfb2694612e3782, type: 3}
+  lettuceSprite: {fileID: 5931842347579807508, guid: 007cfbfb4b1b9654f8f120ba0439feef, type: 3}
+  newspaperSprite: {fileID: -4518853377557969270, guid: 367e481ea52bf7e4f8071b117281c228, type: 3}
 --- !u!61 &5020756697474830735
 BoxCollider2D:
   m_ObjectHideFlags: 0

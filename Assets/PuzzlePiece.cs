@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class PuzzlePiece : MonoBehaviour
 {
@@ -8,6 +9,29 @@ public class PuzzlePiece : MonoBehaviour
 
     [SerializeField] private AudioSource _source;
     [SerializeField] private AudioClip _pickUpClip, _dropClip;
+
+
+     public Sprite lettuceSprite;
+    public Sprite newspaperSprite;
+
+    public void Start()
+    {
+
+        Scene scene = SceneManager.GetActiveScene();
+
+
+
+        _renderer = GetComponent<SpriteRenderer>();
+        if (scene.name == "Newspaper_pzl")
+        {
+            _renderer.sprite = newspaperSprite;
+        }
+        else if (scene.name == "Lettuce_pzl")
+        {
+            _renderer.sprite = lettuceSprite;
+        }
+    }
+
     private bool _dragging,_placed;
 
     Vector2 _offset,_originalPos;
