@@ -17103,7 +17103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe2d01f36b24b4a098b250d65a68a92f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LoadLevelAction
-  levelName: Aiza's Scene
+  levelName: Newspaper_pzl
 --- !u!1 &2021976685
 GameObject:
   m_ObjectHideFlags: 0
