@@ -7,6 +7,7 @@ using TMPro;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UI;
+ 
 
 public class CutsceneManager : MonoBehaviour
 {
@@ -14,8 +15,9 @@ public class CutsceneManager : MonoBehaviour
     public List<CutsceneLine> currLines = new List<CutsceneLine>();
 
     int lineIndex;
+    private CutsceneTrigger activeTrigger; //tracks current trigger
 
-
+    
     public GameObject speechPanel;
     public TextMeshProUGUI dialogueText;
     public TextMeshProUGUI speakerText;
@@ -50,9 +52,10 @@ public class CutsceneManager : MonoBehaviour
     {
         
     }
-
-    public void DeliverLines(List<CutsceneLine> lines)
+    //so that it accepts the active trigger refrence in other script
+    public void DeliverLines(List<CutsceneLine> lines, CutsceneTrigger trigger = null)
     {
+        activeTrigger = trigger;
         currLines.Clear();
 
         foreach (CutsceneLine line in lines)
@@ -89,6 +92,11 @@ public class CutsceneManager : MonoBehaviour
 
 
         }// do not resubsribe to event listeners here
+        //notrify the trigger that cutscene finished
+        if (activeTrigger != null) { 
+            activeTrigger.CompleteCutscene();
+            activeTrigger = null;
+        }
     }
 
     public void CreateSpeech()

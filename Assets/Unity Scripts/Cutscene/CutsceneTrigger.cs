@@ -2,6 +2,7 @@
 
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CutsceneTrigger : MonoBehaviour
 {
@@ -18,7 +19,11 @@ public class CutsceneTrigger : MonoBehaviour
 
     [Tooltip("How many visits required before playing. Default is 1.")]
     public int requiredVisitCount = 1;
-     
+
+
+    [Header("Cutscene Events")]
+    [Tooltip("Actions to perform after this specific cutscene finishes")]
+    public UnityEvent onCutsceneComplete;
 
     //TODO: if dialogue changes so that there is a prompt to start cutscene, these events should probably
     //pass a bool stating such
@@ -74,7 +79,7 @@ public class CutsceneTrigger : MonoBehaviour
             if (currentVisits == requiredVisitCount)
             {
                 print($"Trigger {triggerID} activated on visit {currentVisits}");
-                cutsceneMgr.DeliverLines(Lines);
+                cutsceneMgr.DeliverLines(Lines, this); //pass refrence to this trigger
                 ActorSelect?.Invoke();
                 isActive = true;
             }
@@ -87,17 +92,19 @@ public class CutsceneTrigger : MonoBehaviour
     /// this object (2D physics only).
     /// </summary>
     /// <param name="other">The other Collider2D involved in this collision.</param>
+    /// 
+    public void CompleteCutscene() {
+        onCutsceneComplete?.Invoke();//triggers inspector actions
+        Destroy(this); //safely destroy only after the cutscene actions complete
+    }
     void OnTriggerExit2D(Collider2D other)
     {
         //cutscenes should only activate once, for now
         //isActive = false;
 
         ActorDeselect?.Invoke();
-        //destry only after it has successfully activated its dialogue
-        if (isActive)
-        {
-            Destroy(this);
-        }
+        
+        
     }
 
     
