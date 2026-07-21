@@ -26,7 +26,7 @@ public class CutsceneManager : MonoBehaviour
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
-    {
+    {    //subscribe to static events once at the start
         CutsceneTrigger.ActorSelect += CreateSpeech;
         CutsceneTrigger.ActorInteract += Interact;
         CutsceneTrigger.ActorDeselect += DestroySpeech;
@@ -38,7 +38,13 @@ public class CutsceneManager : MonoBehaviour
         if (speechPanel == null) print("Cannot find reference to the speech panel!");
     }
 
+    //clean up event listeners when object is destroyed to avoid memory leaks/ghost events
 
+    void OnDestroy() { 
+        CutsceneTrigger.ActorSelect -= CreateSpeech;
+        CutsceneTrigger.ActorInteract -= Interact;
+        CutsceneTrigger.ActorDeselect -= DestroySpeech;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -57,6 +63,9 @@ public class CutsceneManager : MonoBehaviour
 
     public void Interact()
     {
+
+        //only progress is the panel is currently active
+        if (speechPanel != null && !speechPanel.activeSelf) return;
         lineIndex++;
 
         // If we reached past the last line, end the cutscene
@@ -74,10 +83,12 @@ public class CutsceneManager : MonoBehaviour
         gameMgr.UnpauseGame();
         gameMgr.ChangePlayerState(GameManager.PlayerState.Play);
 
-        speechPanel.SetActive(false);
+        if (speechPanel != null)
+        {
+            speechPanel.SetActive(false);
 
-        CutsceneTrigger.ActorInteract -= DestroySpeech;
-        CutsceneTrigger.ActorInteract += Interact;
+
+        }// do not resubsribe to event listeners here
     }
 
     public void CreateSpeech()
