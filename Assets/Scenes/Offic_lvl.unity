@@ -7558,6 +7558,144 @@ MonoBehaviour:
   right: 5
   bottom: -5
   top: 5
+--- !u!1001 &488460301
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[0].speaker
+      value: Alex
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[1].speaker
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[2].speaker
+      value: Alex
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[3].speaker
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[4].speaker
+      value: Alex
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[5].speaker
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[6].speaker
+      value: Alex
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[7].speaker
+      value: You
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[0].dialogue
+      value: "\u201CTam trained you well. You\u2019ve got her stubbornness.\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[1].dialogue
+      value: " \u201CIs that a yes?\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[2].dialogue
+      value: " \u201CMy firm will pull the strings tight if I do this officially.
+        But\u2026 I can greenlight half the funding under an \u2018experimental eco-pilot\u2019
+        grant. That covers five units.\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[3].dialogue
+      value: "\u201CHalf? But we need ten to protect the whole block\u2026\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[4].dialogue
+      value: "\u201CIt\u2019s the best I can do without triggering an audit. Bring
+        this to the district supply yard. If you can gather the rest of the salvage,
+        my team will supply the installation tools off the record.\u201D\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[5].dialogue
+      value: "\u201CWe\u2019ll find a way to make it work. Thank you, Alex. Truly.\u201D\r\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[6].dialogue
+      value: "\u201CDon\u2019t thank me yet\u2013getting those materials past city
+        enforces won\u2019t be easy. Oh- and tell Tam I said hi. And keep that bird
+        out of sight on your way back.\u201D\r\n\r\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[7].dialogue
+      value: '"Coo, coo."
+
+        
+
+        
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6384596258644641706, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: m_Name
+      value: office dialogue 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7655065716155665815, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.0865364
+      objectReference: {fileID: 0}
+    - target: {fileID: 7655065716155665815, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.3303738
+      objectReference: {fileID: 0}
+    - target: {fileID: 7655065716155665815, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7655065716155665815, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7655065716155665815, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7655065716155665815, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7655065716155665815, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7655065716155665815, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7655065716155665815, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7655065716155665815, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 9071253829866264065, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
 --- !u!1 &628879114
 GameObject:
   m_ObjectHideFlags: 0
@@ -9721,6 +9859,171 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!1001 &895486607
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[0].speaker
+      value: Alex
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[1].speaker
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[2].speaker
+      value: Alex
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[3].speaker
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[4].speaker
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[5].speaker
+      value: Alex
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[6].speaker
+      value: Alex
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[7].speaker
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[8].speaker
+      value: Alex
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[9].speaker
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[0].dialogue
+      value: "\u201CIf you\u2019re here for a permit, queue\u2019s online. No walk-ins.\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[10].speaker
+      value: Girl
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[1].dialogue
+      value: "\u201CWait- please! I\u2019m not here for a permit. My mother sent
+        me. Tam\u2019s her name.\u201D\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[2].dialogue
+      value: "\u201C...Tam? Tam who? Tam from the old district? I haven\u2019t seen
+        her in years. How\u2019s she holding up?\u201D\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[3].dialogue
+      value: "\u201CShe\u2019s been\u2026 better, Alex. Her lungs are worsening and
+        the heat in our building is unbearable.\u201D\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[4].dialogue
+      value: " \u201CBut\u2026 she designed something. She told me you were the only
+        one who might actually listen.\u201D\r\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[5].dialogue
+      value: "\u201CA passive-cooling roofing system? Refractive paint, recycled
+        insulation, drip-irrigration soil\u2026 Tam always was brilliant.\u201D\r\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[6].dialogue
+      value: "\u201CBut the corporate board controls material distribution. They
+        won\u2019t approve non-standard builds.\u201D\r\n\r\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[7].dialogue
+      value: "\u201CIt\u2019s not just a build, Alex. People are collapsing out there.
+        This design doesn\u2019t use grid power, it costs $150 a unit, and it could
+        drop tenement temperatures by twenty degrees.\u201D\r\n\r\n\r\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[8].dialogue
+      value: "\u201CThe board doesn\u2019t care about temperature, they care about
+        margins. Material costs alone would-\u201D\r\n\r\n\r\n\r\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[9].dialogue
+      value: "\u201CWe\u2019ll source the scrap materials ourselves! Just look at
+        the math\u2013if we save ten units, that's dozens of families who don\u2019t
+        end up in the emergency wards. Please, she built this for everyone the city
+        has ignored.\u201D\r\n\r\n\r\n\r\n\r\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[10].dialogue
+      value: "\u201CWe\u2019ll source the scrap materials ourselves! Just look at
+        the math\u2013if we save ten units, that's dozens of families who don\u2019t
+        end up in the emergency wards. Please, she built this for everyone the city
+        has ignored.\u201D\r\n\r\n\r\n\r\n\r\n\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6384596258644641706, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: m_Name
+      value: office dialgue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7655065716155665815, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.0343485
+      objectReference: {fileID: 0}
+    - target: {fileID: 7655065716155665815, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.954188
+      objectReference: {fileID: 0}
+    - target: {fileID: 7655065716155665815, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7655065716155665815, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7655065716155665815, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7655065716155665815, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7655065716155665815, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7655065716155665815, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7655065716155665815, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7655065716155665815, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 9071253829866264065, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
 --- !u!1 &910461043
 GameObject:
   m_ObjectHideFlags: 0
@@ -16506,3 +16809,5 @@ SceneRoots:
   - {fileID: 952996683}
   - {fileID: 1276284655}
   - {fileID: 628879117}
+  - {fileID: 895486607}
+  - {fileID: 488460301}
