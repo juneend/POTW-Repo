@@ -108,6 +108,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   _renderer: {fileID: 7118952166408555435}
   _source: {fileID: 2993720648962312536}
+  lettuceSprite: {fileID: 5931842347579807508, guid: 007cfbfb4b1b9654f8f120ba0439feef, type: 3}
+  newspaperSprite: {fileID: -4518853377557969270, guid: 367e481ea52bf7e4f8071b117281c228, type: 3}
 --- !u!82 &2993720648962312536
 AudioSource:
   m_ObjectHideFlags: 0
