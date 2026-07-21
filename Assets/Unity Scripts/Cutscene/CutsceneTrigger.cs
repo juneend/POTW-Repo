@@ -12,6 +12,14 @@ public class CutsceneTrigger : MonoBehaviour
     //a list (array) of this cutscene's dialog lines
     public List<CutsceneLine> Lines;
 
+    [Header("Visit Settings")]
+    [Tooltip("Unique name for this trigger to track visits.")]
+    public string triggerID = "DefaultArea";
+
+    [Tooltip("How many visits required before playing. Default is 1.")]
+    public int requiredVisitCount = 1;
+     
+
     //TODO: if dialogue changes so that there is a prompt to start cutscene, these events should probably
     //pass a bool stating such
     //when the player comes within range of the actor
@@ -56,14 +64,21 @@ public class CutsceneTrigger : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         //if the player enters the cutscene and it is NOT active
-        if (other.gameObject.CompareTag("Player") && isActive == false)
+        if (other.gameObject.CompareTag("Player") && isActive)
         {
-            print("collision!");
-            //give this cutscene's lines to the manager
-            cutsceneMgr.DeliverLines(Lines);
-            //call the select event
-            ActorSelect?.Invoke();
-            isActive = true;
+            //increment and track visits in the game manager
+            GameManager.Inst().IncrementVisitCount(triggerID);
+            int currentVisits = GameManager.Inst().GetVisitCount(triggerID);
+
+            //trigger only when visit count matched the target requirement
+            if (currentVisits == requiredVisitCount)
+            {
+                print($"Trigger {triggerID} activated on visit {currentVisits}");
+                cutsceneMgr.DeliverLines(Lines);
+                ActorSelect?.Invoke();
+                isActive = true;
+            }
+
         }
     }
 
@@ -78,7 +93,12 @@ public class CutsceneTrigger : MonoBehaviour
         //isActive = false;
 
         ActorDeselect?.Invoke();
-        
-        Destroy(this);
+        //destry only after it has successfully activated its dialogue
+        if (isActive)
+        {
+            Destroy(this);
+        }
     }
+
+    
 }

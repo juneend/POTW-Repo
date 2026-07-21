@@ -21,6 +21,9 @@ public class GameManager : MonoBehaviour {
 	public GameObject goMenu;
 	public bool paused;
 
+	//dictionary to store visit counts for locations/cutscene across scenes
+	private Dictionary<string, int> locationVisitCounts = new Dictionary<string, int>();
+
 	public enum PlayerState
 	{
 		Pause,
@@ -35,6 +38,20 @@ public class GameManager : MonoBehaviour {
 	//an event that is called whenever the game state changes
 	public static event System.Action<PlayerState> PlayerStateChanged;
 
+	private void Awake() {
+		//enfore singleton pattern and persist across scenes
+		if (gameMgr == null)
+		{
+			gameMgr = this;
+			DontDestroyOnLoad(gameObject); // keeps gm alive between scenes
+			Settings = new GameSettings();
+
+		}
+		else if (gameMgr != this) { 
+			//destrou duplicate gm instances spawned when entering a new scene
+			Destroy(gameObject);
+		}
+	}
 
 	public static GameManager Inst()
 	{
@@ -169,5 +186,26 @@ public class GameManager : MonoBehaviour {
 			goMenu.SetActive(true);
 		}
 
+	}
+
+	
+
+	public int GetVisitCount(string locationID) {
+		if (locationVisitCounts.TryGetValue(locationID, out int count))
+		{
+			return count;
+		}return 0;
+
+	}
+
+	public void IncrementVisitCount(string locationID) {
+		if (locationVisitCounts.ContainsKey(locationID))
+		{
+			locationVisitCounts[locationID]++;
+		}
+		else
+		{
+			locationVisitCounts[locationID] = 1;
+		}
 	}
 }

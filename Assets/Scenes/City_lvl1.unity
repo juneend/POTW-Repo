@@ -8338,6 +8338,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: requiredVisitCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
       propertyPath: Lines.Array.data[1].speaker
       value: Girl
       objectReference: {fileID: 0}
