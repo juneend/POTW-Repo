@@ -64,7 +64,7 @@ public class CutsceneTrigger : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         //if the player enters the cutscene and it is NOT active
-        if (other.gameObject.CompareTag("Player") && isActive)
+        if (other.gameObject.CompareTag("Player") && !isActive)
         {
             //increment and track visits in the game manager
             GameManager.Inst().IncrementVisitCount(triggerID);
