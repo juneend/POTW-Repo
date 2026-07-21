@@ -170,4 +170,25 @@ public class GameManager : MonoBehaviour {
 		}
 
 	}
+
+	private Dictionary<string, int> locationVisitCounts = new Dictionary<string, int>();
+
+	public int GetVisitCount(string locationID) {
+		if (locationVisitCounts.TryGetValue(locationID, out int count))
+		{
+			return count;
+		}return 0;
+
+	}
+
+	public void IncrementVisitCount(string locationID) {
+		if (locationVisitCounts.ContainsKey(locationID))
+		{
+			locationVisitCounts[locationID]++;
+		}
+		else
+		{
+			locationVisitCounts[locationID] = 1;
+		}
+	}
 }
