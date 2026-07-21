@@ -42,11 +42,21 @@ public class PuzzleManager : MonoBehaviour
     public void PiecePlaced()
     {
         piecesPlaced++;
+        Debug.Log($"Pieces placed: {piecesPlaced}");
 
         if (piecesPlaced >= 3)
         {
-            continueButton.SetActive(true);
+            if (continueButton !=null)
+            {
+                continueButton.SetActive(true);
+            }
+            else
+            {
+                Debug.LogError("Continue button is not assigned in the inspector.");
+            } 
         }
     }
 }
+
+
 

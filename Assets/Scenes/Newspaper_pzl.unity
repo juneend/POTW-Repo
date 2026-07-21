@@ -132,7 +132,6 @@ GameObject:
   - component: {fileID: 269590829}
   - component: {fileID: 269590828}
   - component: {fileID: 269590827}
-  - component: {fileID: 269590832}
   - component: {fileID: 269590831}
   m_Layer: 5
   m_Name: button
@@ -173,7 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe2d01f36b24b4a098b250d65a68a92f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LoadLevelAction
-  levelName: 0
+  levelName: Offic_lvl
 --- !u!114 &269590828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,10 +217,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 269590832}
-        m_TargetAssemblyTypeName: ConditionArea, Assembly-CSharp
-        m_MethodName: set_enabled
-        m_Mode: 6
+      - m_Target: {fileID: 269590827}
+        m_TargetAssemblyTypeName: LoadLevelAction, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -314,29 +313,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &269590832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 269590825}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 810546aa5348745779a5772744036fd6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ConditionArea
-  actions:
-  - {fileID: 269590827}
-  useCustomActions: 0
-  customActions:
-    m_PersistentCalls:
-      m_Calls: []
-  happenOnlyOnce: 1
-  filterByTag: 0
-  filterTag: Player
-  frequency: 1
-  eventType: 0
 --- !u!1 &388032036
 GameObject:
   m_ObjectHideFlags: 0
