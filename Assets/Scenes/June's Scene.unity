@@ -8799,10 +8799,10 @@ MonoBehaviour:
   Composition:
     ScreenPosition: {x: 0, y: 0}
     DeadZone:
-      Enabled: 0
+      Enabled: 1
       Size: {x: 0.2, y: 0.2}
     HardLimits:
-      Enabled: 0
+      Enabled: 1
       Size: {x: 0.8, y: 0.8}
       Offset: {x: 0, y: 0}
   CenterOnActivate: 1
@@ -11422,21 +11422,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2340317172255266356, guid: 4a26349926ce036418dbaaa3025db049, type: 3}
+      propertyPath: ScaleSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2340317172255266356, guid: 4a26349926ce036418dbaaa3025db049, type: 3}
+      propertyPath: FlapIncrease
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3233482016921856191, guid: 4a26349926ce036418dbaaa3025db049, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 5109166906966386277, guid: 4a26349926ce036418dbaaa3025db049, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.09493322
-      objectReference: {fileID: 0}
-    - target: {fileID: 5109166906966386277, guid: 4a26349926ce036418dbaaa3025db049, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.09493322
-      objectReference: {fileID: 0}
-    - target: {fileID: 5109166906966386277, guid: 4a26349926ce036418dbaaa3025db049, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.09493322
       objectReference: {fileID: 0}
     - target: {fileID: 5109166906966386277, guid: 4a26349926ce036418dbaaa3025db049, type: 3}
       propertyPath: m_LocalPosition.x
