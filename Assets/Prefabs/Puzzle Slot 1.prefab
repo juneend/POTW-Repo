@@ -20,6 +20,14 @@ PrefabInstance:
       propertyPath: _completeClip
       value: 
       objectReference: {fileID: 8300000, guid: a268fac00c1bec440807d46ae85d7ecc, type: 3}
+    - target: {fileID: 4491669935188375313, guid: be941f1d98a181146a4949bf0b5703c6, type: 3}
+      propertyPath: lettuceSprite
+      value: 
+      objectReference: {fileID: 5931842347579807508, guid: 007cfbfb4b1b9654f8f120ba0439feef, type: 3}
+    - target: {fileID: 4491669935188375313, guid: be941f1d98a181146a4949bf0b5703c6, type: 3}
+      propertyPath: newspaperSprite
+      value: 
+      objectReference: {fileID: -4518853377557969270, guid: 367e481ea52bf7e4f8071b117281c228, type: 3}
     - target: {fileID: 8374482962070064879, guid: be941f1d98a181146a4949bf0b5703c6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
