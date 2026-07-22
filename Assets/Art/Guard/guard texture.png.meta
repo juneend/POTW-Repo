@@ -1,0 +1,806 @@
+fileFormatVersion: 2
+guid: f810796cd7599234281ca340d8cfeb05
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 646872687272816125
+    second: guard texture_0
+  - first:
+      213: 3498935260064176954
+    second: guard texture_1
+  - first:
+      213: 2316775886552498402
+    second: guard texture_2
+  - first:
+      213: 8390760728586538436
+    second: guard texture_3
+  - first:
+      213: 2430121427633162796
+    second: guard texture_4
+  - first:
+      213: -915410078057913412
+    second: guard texture_5
+  - first:
+      213: -6606316077979676518
+    second: guard texture_6
+  - first:
+      213: -8506218323061927622
+    second: guard texture_7
+  - first:
+      213: -8099152328471016203
+    second: guard texture_8
+  - first:
+      213: 1822839815676261265
+    second: guard texture_9
+  - first:
+      213: 7577893188540915638
+    second: guard texture_10
+  - first:
+      213: 3006710764900074771
+    second: guard texture_11
+  - first:
+      213: 3180941492190628639
+    second: guard texture_12
+  - first:
+      213: 6433259361034479649
+    second: guard texture_13
+  - first:
+      213: 4402242919715557652
+    second: guard texture_14
+  - first:
+      213: 5384114960826514924
+    second: guard texture_15
+  - first:
+      213: -950449113119699841
+    second: guard texture_16
+  - first:
+      213: -3274765866556657455
+    second: guard texture_17
+  - first:
+      213: 6641288017026165468
+    second: guard texture_18
+  - first:
+      213: 4551268928325278721
+    second: guard texture_19
+  - first:
+      213: 7862811510089492811
+    second: guard texture_20
+  - first:
+      213: 7009088390572774355
+    second: guard texture_21
+  - first:
+      213: 86494025766782343
+    second: guard texture_22
+  - first:
+      213: 3390982427976303628
+    second: guard texture_23
+  - first:
+      213: -1706910981034702689
+    second: guard texture_24
+  - first:
+      213: 2049639304365437209
+    second: guard texture_25
+  - first:
+      213: 3292519217813806842
+    second: guard texture_26
+  - first:
+      213: -740022742138797200
+    second: guard texture_27
+  - first:
+      213: -9036289129488514745
+    second: guard texture_28
+  - first:
+      213: -6282031066694181342
+    second: guard texture_29
+  - first:
+      213: 3440713420963282811
+    second: guard texture_30
+  - first:
+      213: -5889078751849766373
+    second: guard texture_31
+  - first:
+      213: 4217237563966617372
+    second: guard texture_32
+  - first:
+      213: -3289660248518729935
+    second: guard texture_33
+  - first:
+      213: -5956733205105583560
+    second: guard texture_34
+  - first:
+      213: 6008489466173742390
+    second: guard texture_35
+  - first:
+      213: 2687570325351547550
+    second: guard texture_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 60
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: guard walk down4
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 2
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfd6cc328472af800800000000000000
+      internalID: 646872687272816125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard walk right1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 27
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 411df948c98e71d30800000000000000
+      internalID: 4402242919715557652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard walk right2
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 1
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ced3ee5d70838ba40800000000000000
+      internalID: 5384114960826514924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard walk right3
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 0
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7c4a6b31935fc2f0800000000000000
+      internalID: -950449113119699841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard walk right4
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 0
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d0f0597bc1bd82d0800000000000000
+      internalID: -3274765866556657455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard walk right5
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cda27e1b3489a2c50800000000000000
+      internalID: 6641288017026165468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard walk right6
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 0
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10cd9160afa592f30800000000000000
+      internalID: 4551268928325278721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard walk up1
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 0
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b49acb2d8615e1d60800000000000000
+      internalID: 7862811510089492811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard walk up2
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 0
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d3976761c8454160800000000000000
+      internalID: 7009088390572774355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard walk up3
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 0
+        width: 31
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 785c501bbd9433100800000000000000
+      internalID: 86494025766782343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard walk up4
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 0
+        width: 31
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c048e135d803f0f20800000000000000
+      internalID: 3390982427976303628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard walk up5
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 0
+        width: 33
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f988630a185df48e0800000000000000
+      internalID: -1706910981034702689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard walk up6
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 0
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 911716e7618c17c10800000000000000
+      internalID: 2049639304365437209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard walk left1
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 0
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afe50f9b8c061bd20800000000000000
+      internalID: 3292519217813806842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard walk left2
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 1
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0734b11ac39eab5f0800000000000000
+      internalID: -740022742138797200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard walk left3
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 0
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7410d1db9e6a89280800000000000000
+      internalID: -9036289129488514745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard walk left4
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 0
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22e99b9470eb1d8a0800000000000000
+      internalID: -6282031066694181342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard walk left5
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 1
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7f7f6e60aedfbf20800000000000000
+      internalID: 3440713420963282811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard walk left6
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 0
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b12a1bda31ac54ea0800000000000000
+      internalID: -5889078751849766373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard walk down1
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c17f9a57833a68a30800000000000000
+      internalID: 4217237563966617372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard walk down2
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 0
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13f515fee67c852d0800000000000000
+      internalID: -3289660248518729935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard walk down3
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1
+        width: 31
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83a58e7c5be655da0800000000000000
+      internalID: -5956733205105583560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard walk down5
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 0
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63d56fbc551726350800000000000000
+      internalID: 6008489466173742390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guard walk down6
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 1
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e92c577b8fa2c4520800000000000000
+      internalID: 2687570325351547550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7eb9b9da2091b6b4cbbe83428ce926b2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      guard texture_1: 3498935260064176954
+      guard texture_10: 7577893188540915638
+      guard texture_11: 3006710764900074771
+      guard texture_12: 3180941492190628639
+      guard texture_13: 6433259361034479649
+      guard texture_2: 2316775886552498402
+      guard texture_3: 8390760728586538436
+      guard texture_4: 2430121427633162796
+      guard texture_5: -915410078057913412
+      guard texture_6: -6606316077979676518
+      guard texture_7: -8506218323061927622
+      guard texture_8: -8099152328471016203
+      guard texture_9: 1822839815676261265
+      guard walk down1: 4217237563966617372
+      guard walk down2: -3289660248518729935
+      guard walk down3: -5956733205105583560
+      guard walk down4: 646872687272816125
+      guard walk down5: 6008489466173742390
+      guard walk down6: 2687570325351547550
+      guard walk left1: 3292519217813806842
+      guard walk left2: -740022742138797200
+      guard walk left3: -9036289129488514745
+      guard walk left4: -6282031066694181342
+      guard walk left5: 3440713420963282811
+      guard walk left6: -5889078751849766373
+      guard walk right1: 4402242919715557652
+      guard walk right2: 5384114960826514924
+      guard walk right3: -950449113119699841
+      guard walk right4: -3274765866556657455
+      guard walk right5: 6641288017026165468
+      guard walk right6: 4551268928325278721
+      guard walk up1: 7862811510089492811
+      guard walk up2: 7009088390572774355
+      guard walk up3: 86494025766782343
+      guard walk up4: 3390982427976303628
+      guard walk up5: -1706910981034702689
+      guard walk up6: 2049639304365437209
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

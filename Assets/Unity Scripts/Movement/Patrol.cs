@@ -19,9 +19,12 @@ public class Patrol : Physics2DObject
 	private Vector2[] newWaypoints;
 	private int currentTargetIndex;
 
+	public Animator animator;
+
 	void Start ()
 	{
 		currentTargetIndex = 0;
+		animator = GetComponent<Animator>();
 
 		newWaypoints = new Vector2[waypoints.Length+1];
 		int w = 0;
@@ -46,6 +49,13 @@ public class Patrol : Physics2DObject
 	{
 		Vector2 currentTarget = newWaypoints[currentTargetIndex];
 
+		Vector2 movement = (Vector3)currentTarget - transform.position;
+
+		animator?.SetBool("isWalking", true);
+
+		animator?.SetFloat("InputX", movement.x);
+		animator?.SetFloat("InputY", movement.y);
+
 		rigidbody2D.MovePosition(transform.position + ((Vector3)currentTarget - transform.position).normalized * speed * Time.fixedDeltaTime);
 
 		if(Vector2.Distance(transform.position, currentTarget) <= .1f)
@@ -56,6 +66,11 @@ public class Patrol : Physics2DObject
 			{
 				currentTarget = newWaypoints[currentTargetIndex];
 				Utils.SetAxisTowards(lookAxis, transform, ((Vector3)currentTarget - transform.position).normalized);
+
+				animator?.SetBool("isWalking", false);
+
+				animator?.SetFloat("LastInputX", movement.x);
+				animator?.SetFloat("LastInputY", movement.y);
 			}
 		}
 	}
