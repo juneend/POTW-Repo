@@ -11,8 +11,10 @@ public class PuzzlePiece : MonoBehaviour
     [SerializeField] private AudioClip _pickUpClip, _dropClip;
 
 
-     public Sprite lettuceSprite;
+    public Sprite lettuceSprite;
     public Sprite newspaperSprite;
+
+    private PuzzleManager _manager; //adding refrence to puzzlemanager
 
     public void Start()
     {
@@ -32,16 +34,22 @@ public class PuzzlePiece : MonoBehaviour
         }
     }
 
+
     private bool _dragging,_placed;
 
     Vector2 _offset,_originalPos;
 
     private PuzzleSlot _slot;
 
-    public void Init(PuzzleSlot slot)
+    //updating iunit to accept the manager refrence
+    public void Init(PuzzleSlot slot, PuzzleManager manager)
     {
-        _renderer.sprite = slot._renderer.sprite;
+        _manager = manager; //store the manager reference
         _slot = slot;
+        _renderer.sprite = slot._renderer.sprite;
+
+        if (_renderer == null) _renderer = GetComponent<SpriteRenderer>();
+        _renderer.sprite = _slot._renderer.sprite;
     }
 
     void Awake()
@@ -61,8 +69,10 @@ void Update()
 
 
     
-    void OnMouseDown()
+    void OnMouseDown() 
     {
+        if (_placed) return; //prevents dragging after piece is already placed
+
         _dragging = true;
         _source.PlayOneShot(_pickUpClip);
 
@@ -71,13 +81,27 @@ void Update()
     void OnMouseUp()
 
     {
+        if (_placed) return; //prevents running multiple times
 
-        if(Vector2.Distance(transform.position, _slot.transform.position) < 3)
+        if (Vector2.Distance(transform.position, _slot.transform.position) < 3)
         {
             transform.position = _slot.transform.position;
             _slot.Placed();
-            _placed = true;
+            _placed = true; //mark as placed first
+            _dragging = false;
+
+            //disable collider so player can't click/drag it again
+            Collider2D col = GetComponent<Collider2D>();
+            if (col != null) col.enabled = false;
+
+            if (_manager != null) {
+                _manager.PiecePlaced();
+            }
+            else {
+                Debug.LogError("PuzzleManager refrence is missing on PuzzlePiece!");
+            }
         }
+
         else
         {
             transform.position = _originalPos;

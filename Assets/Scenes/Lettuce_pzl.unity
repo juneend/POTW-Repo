@@ -218,8 +218,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 269590827}
         m_TargetAssemblyTypeName: LoadLevelAction, Assembly-CSharp
-        m_MethodName: set_enabled
-        m_Mode: 6
+        m_MethodName: LoadLevel
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -450,10 +450,10 @@ MonoBehaviour:
   - {fileID: 9132276833645312121, guid: 786fe5ca4990241488612f7a6eeeb438, type: 3}
   - {fileID: 9132276833645312121, guid: eb353d748001e5948bd41e9f4979f047, type: 3}
   - {fileID: 9132276833645312121, guid: cccd64051e3a6924ba64bc28e41534dc, type: 3}
-  - {fileID: 4491669935188375313, guid: be941f1d98a181146a4949bf0b5703c6, type: 3}
   _piecePrefab: {fileID: 36186177147031974, guid: 39b7b8c49c4c6c0478a1a3240ef0345a, type: 3}
   _slotParent: {fileID: 497470490}
   _pieceParent: {fileID: 2026502860}
+  continueButton: {fileID: 269590825}
 --- !u!1 &497470489
 GameObject:
   m_ObjectHideFlags: 0
