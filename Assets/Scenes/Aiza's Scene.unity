@@ -18185,6 +18185,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: triggerID
+      value: MomTalk
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
       propertyPath: Lines.Array.size
       value: 17
       objectReference: {fileID: 0}
@@ -18454,7 +18458,8 @@ PrefabInstance:
       value: -0.06343794
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 9071253829866264065, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
@@ -67214,7 +67219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe2d01f36b24b4a098b250d65a68a92f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LoadLevelAction
-  levelName: City_lvl2
+  levelName: City_lvl2_fixed
 --- !u!61 &1349366541
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -67290,15 +67295,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5109166906966386277, guid: 4a26349926ce036418dbaaa3025db049, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.15467826
+      value: 1.4959089
       objectReference: {fileID: 0}
     - target: {fileID: 5109166906966386277, guid: 4a26349926ce036418dbaaa3025db049, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.15467826
+      value: 1.4959089
       objectReference: {fileID: 0}
     - target: {fileID: 5109166906966386277, guid: 4a26349926ce036418dbaaa3025db049, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.15467826
+      value: 1.4959089
       objectReference: {fileID: 0}
     - target: {fileID: 5109166906966386277, guid: 4a26349926ce036418dbaaa3025db049, type: 3}
       propertyPath: m_LocalPosition.x

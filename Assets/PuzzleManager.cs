@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement; //add scenemanagerment to teleport between scenes
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,11 +11,13 @@ public class PuzzleManager : MonoBehaviour
     [SerializeField] private Transform _slotParent, _pieceParent;
 
     [SerializeField] private GameObject continueButton;
+    
 
     private int piecesPlaced = 0;
 
     void Start()
     {
+        PiecePlaced();
         continueButton.SetActive(false);
         Spawn();
     }
@@ -35,7 +38,7 @@ public class PuzzleManager : MonoBehaviour
                 _pieceParent.GetChild(i).position,
                 Quaternion.identity);
 
-            spawnedPiece.Init(spawnedSlot);
+            spawnedPiece.Init(spawnedSlot, this);
         }
     }
 
@@ -55,6 +58,11 @@ public class PuzzleManager : MonoBehaviour
                 Debug.LogError("Continue button is not assigned in the inspector.");
             } 
         }
+    }
+
+    //call this function when the continue button is clicked
+    public void Retry() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
 
