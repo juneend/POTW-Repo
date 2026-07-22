@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 69720725}
   - component: {fileID: 69720724}
   - component: {fileID: 69720726}
+  - component: {fileID: 69720727}
   m_Layer: 0
   m_Name: buildings1
   m_TagString: Untagged
@@ -199,7 +200,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1757169767}
+  m_Father: {fileID: 1550471178}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!483693784 &69720724
 TilemapRenderer:
@@ -18115,6 +18116,22 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!114 &69720727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69720722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NavMeshPlus::NavMeshPlus.Components.NavMeshModifier
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1001 &416845207
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67316,6 +67333,7 @@ GameObject:
   - component: {fileID: 1425681547}
   - component: {fileID: 1425681546}
   - component: {fileID: 1425681548}
+  - component: {fileID: 1425681549}
   m_Layer: 0
   m_Name: details2
   m_TagString: Untagged
@@ -67336,7 +67354,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1757169767}
+  m_Father: {fileID: 1550471178}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!483693784 &1425681546
 TilemapRenderer:
@@ -69232,6 +69250,22 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!114 &1425681549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425681544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NavMeshPlus::NavMeshPlus.Components.NavMeshModifier
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1550471176
 GameObject:
   m_ObjectHideFlags: 0
@@ -69276,6 +69310,9 @@ Transform:
   m_Children:
   - {fileID: 1324035853}
   - {fileID: 1628530940}
+  - {fileID: 69720723}
+  - {fileID: 1951481966}
+  - {fileID: 1425681545}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1609279497
@@ -69514,6 +69551,7 @@ GameObject:
   - component: {fileID: 1628530940}
   - component: {fileID: 1628530942}
   - component: {fileID: 1628530941}
+  - component: {fileID: 1628530943}
   m_Layer: 0
   m_Name: grounddetails
   m_TagString: Untagged
@@ -71452,53 +71490,22 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &1757169765
-GameObject:
+--- !u!114 &1628530943
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1757169767}
-  - component: {fileID: 1757169766}
-  m_Layer: 0
-  m_Name: Grid
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!156049354 &1757169766
-Grid:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1757169765}
+  m_GameObject: {fileID: 1628530939}
   m_Enabled: 1
-  m_CellSize: {x: 0.16, y: 0.16, z: 0}
-  m_CellGap: {x: 0, y: 0, z: 0}
-  m_CellLayout: 0
-  m_CellSwizzle: 0
---- !u!4 &1757169767
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1757169765}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 69720723}
-  - {fileID: 1951481966}
-  - {fileID: 1425681545}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NavMeshPlus::NavMeshPlus.Components.NavMeshModifier
+  m_OverrideArea: 1
+  m_Area: 0
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &1951481965
 GameObject:
   m_ObjectHideFlags: 0
@@ -71511,6 +71518,7 @@ GameObject:
   - component: {fileID: 1951481968}
   - component: {fileID: 1951481967}
   - component: {fileID: 1951481969}
+  - component: {fileID: 1951481970}
   m_Layer: 0
   m_Name: details1
   m_TagString: Untagged
@@ -71531,7 +71539,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1757169767}
+  m_Father: {fileID: 1550471178}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!483693784 &1951481967
 TilemapRenderer:
@@ -76358,6 +76366,22 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!114 &1951481970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951481965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NavMeshPlus::NavMeshPlus.Components.NavMeshModifier
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -76365,10 +76389,10 @@ SceneRoots:
   - {fileID: 974985161}
   - {fileID: 1250303580}
   - {fileID: 1550471178}
-  - {fileID: 1757169767}
   - {fileID: 1420408460}
   - {fileID: 1349366542}
   - {fileID: 448527128}
   - {fileID: 68895729}
   - {fileID: 973774613}
   - {fileID: 416845207}
+  - {fileID: 1609279497}
