@@ -11423,12 +11423,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2340317172255266356, guid: 4a26349926ce036418dbaaa3025db049, type: 3}
+      propertyPath: MaxFlaps
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2340317172255266356, guid: 4a26349926ce036418dbaaa3025db049, type: 3}
       propertyPath: ScaleSpeed
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2340317172255266356, guid: 4a26349926ce036418dbaaa3025db049, type: 3}
       propertyPath: FlapIncrease
-      value: 0.5
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3233482016921856191, guid: 4a26349926ce036418dbaaa3025db049, type: 3}
       propertyPath: m_Name
