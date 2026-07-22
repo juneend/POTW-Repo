@@ -620,11 +620,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5109166906966386277, guid: 4a26349926ce036418dbaaa3025db049, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.153
+      value: -0.179
       objectReference: {fileID: 0}
     - target: {fileID: 5109166906966386277, guid: 4a26349926ce036418dbaaa3025db049, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.453
+      value: -4.71
       objectReference: {fileID: 0}
     - target: {fileID: 5109166906966386277, guid: 4a26349926ce036418dbaaa3025db049, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14256,6 +14256,113 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!1 &1429379277
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1429379279}
+  - component: {fileID: 1429379278}
+  m_Layer: 0
+  m_Name: Freeform Light 2D (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1429379278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429379277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.2D.Runtime::UnityEngine.Rendering.Universal.Light2D
+  m_ComponentVersion: 4
+  m_LightType: 1
+  m_BlendStyleIndex: 0
+  m_Light2DProvider:
+    rid: -2
+  m_SelectionSources:
+    rid: 5820985496992219138
+  m_FalloffIntensity: 1
+  m_Color: {r: 0.72955966, g: 0.6689213, b: 0.33724922, a: 1}
+  m_Intensity: 1.3
+  m_LightVolumeIntensity: 1
+  m_LightVolumeEnabled: 0
+  m_ApplyToSortingLayers: 00000000
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowsEnabled: 1
+  m_ShadowIntensity: 0.842
+  m_ShadowSoftness: 0.372
+  m_ShadowSoftnessFalloffIntensity: 0.404
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_LocalBounds:
+    m_Center: {x: 0.16790003, y: 0.17415002, z: 0}
+    m_Extent: {x: 0.6936, y: 0.82235, z: 0}
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: 0.26490152, y: 0.15825224, z: 0}
+  - {x: 0.17279032, y: 0.4961226, z: 0}
+  - {x: 0.11077972, y: 0.49376756, z: 0}
+  - {x: 0.027289718, y: 0.13043487, z: 0}
+  - {x: -0.026363254, y: -0.14892888, z: 0}
+  - {x: 0.36159548, y: -0.1460129, z: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 5820985496992219138
+      type: {class: Light2DProviderSources, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
+      data:
+        m_SelectedHashCode: 1
+        m_SelectedSource:
+          rid: -2
+        m_Provider2DCache:
+          rid: 5820985496992219139
+    - rid: 5820985496992219139
+      type: {class: 'Provider2DCache`1[[UnityEngine.Rendering.Universal.Light2DProvider, Unity.RenderPipelines.Universal.2D.Runtime]]', ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
+      data:
+        m_Cache: []
+--- !u!4 &1429379279
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429379277}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.098146796, y: -0.48749757, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1625008477
 GameObject:
   m_ObjectHideFlags: 0
@@ -25811,6 +25918,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7678088143010719376, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: m_Size.y
+      value: 0.67383075
+      objectReference: {fileID: 0}
+    - target: {fileID: 7678088143010719376, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: m_Offset.y
+      value: 1.5978197
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 9071253829866264065, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
@@ -25874,8 +25989,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.16790003, y: 0.17415002, z: 0}
-    m_Extent: {x: 0.6936, y: 0.82235, z: 0}
+    m_Center: {x: 0.19450003, y: 0.088100016, z: 0}
+    m_Extent: {x: 1.0320001, y: 0.9084, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -25886,12 +26001,12 @@ MonoBehaviour:
   m_ShapeLightFalloffSize: 0.5
   m_ShapeLightFalloffOffset: {x: 0, y: 0}
   m_ShapePath:
-  - {x: 0.26490152, y: 0.15825224, z: 0}
+  - {x: 0.726684, y: -0.28695828, z: 0}
   - {x: 0.17279032, y: 0.4961226, z: 0}
   - {x: 0.11077972, y: 0.49376756, z: 0}
-  - {x: 0.027289718, y: 0.13043487, z: 0}
-  - {x: -0.026363254, y: -0.14892888, z: 0}
-  - {x: 0.36159548, y: -0.1460129, z: 0}
+  - {x: -0.33860874, y: -0.32155606, z: 0}
+  - {x: -0.009012818, y: -0.30260217, z: 0}
+  - {x: 0.38886, y: -0.2773788, z: 0}
   references:
     version: 2
     RefIds:
@@ -25918,7 +26033,7 @@ Transform:
   m_GameObject: {fileID: 2013583278}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.098146796, y: -0.48749757, z: 0}
+  m_LocalPosition: {x: -1.628, y: 0.602, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26979,5 +27094,6 @@ SceneRoots:
   - {fileID: 804322179}
   - {fileID: 1377526439}
   - {fileID: 2013583280}
+  - {fileID: 1429379279}
   - {fileID: 1235932000}
   - {fileID: 251492483}
