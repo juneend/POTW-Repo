@@ -17,7 +17,7 @@ public class PuzzleManager : MonoBehaviour
 
     void Start()
     {
-        PiecePlaced();
+        piecesPlaced = 0;
         continueButton.SetActive(false);
         Spawn();
     }
