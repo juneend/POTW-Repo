@@ -195,12 +195,12 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e7573cb23341894486ebbd71453d52b, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::Flap
   rigidbody2D: {fileID: 0}
   key: 32
   flapStrength: 15
-  MaxFlaps: 10
-  FlapIncrease: 0.1
+  MaxFlaps: 3
+  FlapIncrease: 0.3
   MaxHeightMult: 2
 --- !u!95 &1946183205733997119
 Animator:
