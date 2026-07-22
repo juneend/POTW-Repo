@@ -8692,37 +8692,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f6ae8712879c4f40bf6af3fe490badd, type: 3}
---- !u!1 &1026621841 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8022817266218548239, guid: 4e9e4856c902e344b8d20996f4886624, type: 3}
-  m_PrefabInstance: {fileID: 5186254851607381213}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1026621842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1026621841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66eec6aefb56e4015b605a5088d6e109, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Patrol
-  rigidbody2D: {fileID: 0}
-  speed: 2
-  directionChangeInterval: 3
-  orientToDirection: 0
-  lookAxis: 0
-  waypoints:
-  - {x: 5.488493, y: 0.8818235}
-  - {x: 6.4020414, y: 1.5917919}
-  - {x: 7.6648817, y: 1.5808645}
-  - {x: 8.432368, y: 0.8319596}
-  - {x: 8.522533, y: -0.028146625}
-  - {x: 7.520897, y: -0.86803365}
-  - {x: 6.1654363, y: -0.88906956}
-  animator: {fileID: 0}
 --- !u!1 &1070526223
 GameObject:
   m_ObjectHideFlags: 0
@@ -11607,10 +11576,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8022817266218548239, guid: 4e9e4856c902e344b8d20996f4886624, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1026621842}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e9e4856c902e344b8d20996f4886624, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
