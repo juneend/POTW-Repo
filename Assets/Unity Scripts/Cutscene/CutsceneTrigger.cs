@@ -6,9 +6,8 @@ using UnityEngine.Events;
 
 public class CutsceneTrigger : MonoBehaviour
 {
-    //TODO: implement interact functionality
-    //should this cutscene activate on collision, or on interact?
-    //public bool ActivateOnCollide = true;
+
+    public KeyCode key = KeyCode.Space;
 
     //a list (array) of this cutscene's dialog lines
     public List<CutsceneLine> Lines;
@@ -55,7 +54,7 @@ public class CutsceneTrigger : MonoBehaviour
     {
         //if the player is standing in range of the actor
         //and they interact
-        if (Input.GetKeyUp(KeyCode.E) && isActive)
+        if (Input.GetKeyUp(key) && isActive)
         {
             ActorInteract?.Invoke();
         }

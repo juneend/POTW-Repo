@@ -37,7 +37,10 @@ public class UIScript : MonoBehaviour
 	{
 		if(numberOfPlayers == Players.OnePlayer)
 		{
-			// No setup needed
+			leftLabel.text = "Flaps";
+
+			//Flap.onPlayerFlap
+			
 		}
 		else
 		{
@@ -58,6 +61,16 @@ public class UIScript : MonoBehaviour
 				// Life will be provided by the PlayerHealth components
 			}
 		}
+	}
+
+	public void Flap(int remainingFlaps)
+	{
+		
+	}
+
+	public void ResetFlap(int maxFlaps)
+	{
+		
 	}
 
 	//version of the one below with one parameter to be able to connect UnityEvents
