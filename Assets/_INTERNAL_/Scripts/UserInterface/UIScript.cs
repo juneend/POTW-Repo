@@ -38,8 +38,13 @@ public class UIScript : MonoBehaviour
 		if(numberOfPlayers == Players.OnePlayer)
 		{
 			leftLabel.text = "Flaps";
+			numberLabels[0].text = "3";
 
-			//Flap.onPlayerFlap
+			rightLabel.enabled = false;
+			numberLabels[1].enabled = false;
+
+			Flap.onPlayerFlap += SetFlap;
+			Flap.onPlayerLand += ResetFlap;
 			
 		}
 		else
@@ -63,14 +68,14 @@ public class UIScript : MonoBehaviour
 		}
 	}
 
-	public void Flap(int remainingFlaps)
+	public void SetFlap(int remainingFlaps)
 	{
-		
+		numberLabels[0].text = remainingFlaps.ToString();
 	}
 
 	public void ResetFlap(int maxFlaps)
 	{
-		
+		numberLabels[0].text = maxFlaps.ToString();
 	}
 
 	//version of the one below with one parameter to be able to connect UnityEvents
