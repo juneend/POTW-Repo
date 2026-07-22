@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b216fade145dee44e852c9d8053f9e2a
+guid: e4e97ab58a03b1244822cea7f0eb73ab
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3250093850532043878
-    second: GIRL-WALK-UP-1_0
+      213: 6146575876527142100
+    second: GIRL-WALK-UP-6_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GIRL-WALK-UP-1_0
+      name: GIRL-WALK-UP-6_0
       rect:
         serializedVersion: 2
-        x: 807
-        y: 980
-        width: 114
-        height: 271
+        x: 820
+        y: 999
+        width: 97
+        height: 252
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 66cd4a72327aa1d20800000000000000
-      internalID: 3250093850532043878
+      spriteID: 4d4b26991360d4550800000000000000
+      internalID: 6146575876527142100
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      GIRL-WALK-UP-1_0: 3250093850532043878
+      GIRL-WALK-UP-6_0: 6146575876527142100
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
