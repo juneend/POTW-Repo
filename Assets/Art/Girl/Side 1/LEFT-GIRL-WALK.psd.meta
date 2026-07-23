@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3f979cbb202dce9478d8ec59969c5699
+guid: e50bb2abb242ee04a9707def3bb5c2e9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3912577050894199854
-    second: 4-RIGHT-GIRL_0
+      213: -2404916206452343126
+    second: LEFT-GIRL-WALK_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 1500
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 4-RIGHT-GIRL_0
+      name: LEFT-GIRL-WALK_0
       rect:
         serializedVersion: 2
-        x: 889
-        y: 567
-        width: 455
-        height: 946
+        x: 844
+        y: 577
+        width: 315
+        height: 936
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2d31b15e6ebb3b9c0800000000000000
-      internalID: -3912577050894199854
+      spriteID: aaef3d7b37500aed0800000000000000
+      internalID: -2404916206452343126
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      4-RIGHT-GIRL_0: -3912577050894199854
+      LEFT-GIRL-WALK_0: -2404916206452343126
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
