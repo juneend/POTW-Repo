@@ -3347,11 +3347,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
       propertyPath: Lines.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
       propertyPath: requiredVisitCount
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
       propertyPath: Lines.Array.data[0].speaker
@@ -3360,6 +3360,10 @@ PrefabInstance:
     - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
       propertyPath: Lines.Array.data[1].speaker
       value: You
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[2].speaker
+      value: Girl
       objectReference: {fileID: 0}
     - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
       propertyPath: Lines.Array.data[4].speaker
@@ -3384,6 +3388,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -642357303508060665, guid: 537f836a5a512bb488cc5476c6755e98, type: 3}
     - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[2].dialogue
+      value: '"C''mon, let''s go find the alleyway. Hopefully the guards aren''t
+        too strict today."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
+      propertyPath: Lines.Array.data[2].portrait
+      value: 
+      objectReference: {fileID: 1926693725549596516, guid: fb03058050339ea4c89d4302cf2901db, type: 3}
+    - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
       propertyPath: Lines.Array.data[4].dialogue
       value: Goodbye!
       objectReference: {fileID: 0}
@@ -3393,7 +3406,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7655065716155665815, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.39291
+      value: 0.14291
       objectReference: {fileID: 0}
     - target: {fileID: 7655065716155665815, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
       propertyPath: m_LocalPosition.y
@@ -26335,7 +26348,8 @@ PrefabInstance:
       propertyPath: Lines.Array.data[0].dialogue
       value: " \u201CAlright\u2026 Stay close. We just need to grab some ground beef,
         and whatever wilted greens are left at the market. If the heat didn\u2019t
-        spoil them, the ration prices might.\u201D"
+        spoil them, the ration prices might. And we need to hurry before the heat
+        is at its peak.\""
       objectReference: {fileID: 0}
     - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
       propertyPath: Lines.Array.data[0].portrait
@@ -26360,7 +26374,8 @@ PrefabInstance:
       objectReference: {fileID: -642357303508060665, guid: 537f836a5a512bb488cc5476c6755e98, type: 3}
     - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
       propertyPath: Lines.Array.data[3].dialogue
-      value: "\u201CYeah, let\u2019s not risk it. The market's just ahead.\u201D\r\n"
+      value: "\u201CYeah, let\u2019s not risk it. The market's just ahead. Should
+        be open.\u201D\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
       propertyPath: Lines.Array.data[3].portrait

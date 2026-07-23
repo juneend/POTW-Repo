@@ -1564,7 +1564,7 @@ PrefabInstance:
     - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
       propertyPath: Lines.Array.data[0].dialogue
       value: '"The fancy offices are this way, but I think Mom has a blueprint for
-        that... So, let''s make sure we talk to her first."'
+        that... So, let''s make sure we talk to her first. Let''s go find the alleyway."'
       objectReference: {fileID: 0}
     - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
       propertyPath: Lines.Array.data[0].portrait
@@ -8678,7 +8678,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7655065716155665815, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 7655065716155665815, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
       propertyPath: m_LocalPosition.y

@@ -6987,7 +6987,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
       propertyPath: requiredVisitCount
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
       propertyPath: Lines.Array.data[0].speaker
@@ -7052,11 +7052,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7655065716155665815, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.24699998
+      value: -1.497
       objectReference: {fileID: 0}
     - target: {fileID: 7655065716155665815, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.227
+      value: -2.977
       objectReference: {fileID: 0}
     - target: {fileID: 7655065716155665815, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
       propertyPath: m_LocalPosition.z
