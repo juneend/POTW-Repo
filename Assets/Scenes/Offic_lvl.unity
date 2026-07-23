@@ -10531,7 +10531,7 @@ PrefabInstance:
     - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
       propertyPath: Lines.Array.data[5].dialogue
       value: "\u201CA passive-cooling roofing system? Refractive paint, recycled
-        insulation, drip-irrigration soil\u2026 Tam always was brilliant.\u201D\r\n\r\n"
+        insulation, drip-irrigation soil\u2026 Tam always was brilliant.\u201D\r\n\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
       propertyPath: Lines.Array.data[5].portrait

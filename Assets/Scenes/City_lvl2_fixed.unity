@@ -1552,7 +1552,7 @@ PrefabInstance:
     - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
       propertyPath: Lines.Array.data[0].portrait
       value: 
-      objectReference: {fileID: 1638969219849453209, guid: 15cfbc1201a107b47873877f21c27278, type: 3}
+      objectReference: {fileID: 1926693725549596516, guid: fb03058050339ea4c89d4302cf2901db, type: 3}
     - target: {fileID: 6265409806070484025, guid: 0d8a15d08ff259a49a85dfdfee2e1838, type: 3}
       propertyPath: Lines.Array.data[1].dialogue
       value: Goodbye!
