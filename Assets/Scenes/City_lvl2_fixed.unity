@@ -1536,6 +1536,7 @@ MonoBehaviour:
   lookAxis: 0
   waypoints:
   - {x: 0.40783155, y: -4.1868515}
+  animator: {fileID: 0}
 --- !u!1 &448727042
 GameObject:
   m_ObjectHideFlags: 0
@@ -8799,6 +8800,54 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7970437893046538106, guid: 03227db5c72eac740a01bb5853ad1327, type: 3}
   m_PrefabInstance: {fileID: 502641978}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &549619678
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 549619680}
+  - component: {fileID: 549619679}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &549619679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549619678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43ef6244fb14fde49a88d9375bd48ae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  goMenu: {fileID: 816028095}
+  paused: 0
+  currState: 1
+  isPaused: 0
+--- !u!4 &549619680
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549619678}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.43203, y: -3.37873, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &600216031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9100,6 +9149,7 @@ MonoBehaviour:
   lookAxis: 0
   waypoints:
   - {x: 0.22920728, y: 4.9792724}
+  animator: {fileID: 0}
 --- !u!1001 &809670002
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14034,6 +14084,7 @@ MonoBehaviour:
   lookAxis: 2
   waypoints:
   - {x: -0.22080946, y: 1.7772014}
+  animator: {fileID: 0}
 --- !u!1 &999465112
 GameObject:
   m_ObjectHideFlags: 0
@@ -52161,6 +52212,7 @@ MonoBehaviour:
   lookAxis: 0
   waypoints:
   - {x: -0.4456948, y: -1.9121674}
+  animator: {fileID: 0}
 --- !u!1 &1759498956
 GameObject:
   m_ObjectHideFlags: 0
@@ -52375,6 +52427,7 @@ MonoBehaviour:
   waypoints:
   - {x: -0.33752745, y: -0.9379189}
   - {x: 1.2702718, y: -1.0094464}
+  animator: {fileID: 0}
 --- !u!1 &1974020736
 GameObject:
   m_ObjectHideFlags: 0
@@ -55189,3 +55242,4 @@ SceneRoots:
   - {fileID: 1759498958}
   - {fileID: 1477522615}
   - {fileID: 1982640832}
+  - {fileID: 549619680}
