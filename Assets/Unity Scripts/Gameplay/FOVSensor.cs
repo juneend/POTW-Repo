@@ -36,7 +36,7 @@ public class FOVSensor : MonoBehaviour
             if (player != null) target = player.transform;
         }
 
-        //search for the playerstealth compnent on the target or its parent
+        //search for the playerstealth compnent on the target or its parent - possible error since we're not using player stealth?
         if (target != null) { 
             playerStealth = target.GetComponent<PlayerStealth>();
             if (playerStealth != null) {
@@ -65,7 +65,7 @@ public class FOVSensor : MonoBehaviour
 
         DrawFOVVisual();
 
-        //stealth check, if the player exists and is hidden, hide the alert icon and skip detection
+        //stealth check, if the player exists and is hidden, hide the alert icon and skip detection - more playerstealth, we don't use
         if (playerStealth != null && playerStealth.isHidden)
         {
             if (alertIcon != null) alertIcon.SetActive(false);
