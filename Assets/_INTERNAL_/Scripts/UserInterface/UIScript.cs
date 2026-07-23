@@ -70,12 +70,19 @@ public class UIScript : MonoBehaviour
 
 	public void SetFlap(int remainingFlaps)
 	{
-		numberLabels[0].text = remainingFlaps.ToString();
+		/* if(numberLabels[0].text != null)
+		{
+			numberLabels[0].text = remainingFlaps.ToString();
+		} */
+
 	}
 
 	public void ResetFlap(int maxFlaps)
 	{
-		numberLabels[0].text = maxFlaps.ToString();
+		/* if(numberLabels[0].text != null)
+		{
+			numberLabels[0].text = maxFlaps.ToString();
+		} */
 	}
 
 	//version of the one below with one parameter to be able to connect UnityEvents
